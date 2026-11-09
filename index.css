@@ -1,0 +1,41 @@
+/* Center the main title */
+h1 {
+  text-align: center;
+}
+
+/* Put the two sections side by side */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* The list of party names */
+.party-list {
+  list-style: none; /* remove the bullet points */
+  padding: 0;
+}
+
+.party-list li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer; /* show a hand when hovering */
+}
+
+.party-list li:hover {
+  background-color: #f2f2f2;
+}
+
+/* Extension: the selected party looks different */
+.party-list li.selected {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Put the date and address on their own lines */
+time,
+address {
+  display: block;
+}
